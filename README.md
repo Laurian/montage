@@ -5,14 +5,12 @@ This is a Meedan fork to run Montage in a Docker environment. WORK IN PROGRESS.
 - `docker-compose build`
 - `docker-compose up`
 - `docker-compose exec montage bash`
-- ```
-pip install virtualenv
-virtualenv GREENDAY
-source ./GREENDAY/bin/activate
-pip install -r requirements.txt
-pip install zc.recipe.egg==2.0.3
-buildout
-```
+- `pip install virtualenv`
+- `virtualenv GREENDAY`
+- `source ./GREENDAY/bin/activate`
+- `pip install -r requirements.txt`
+- `pip install zc.recipe.egg==2.0.3`
+- `buildout`
 - `patch parts/google_appengine/google/appengine/dist27/socket.py socket.py.patch`
 - `./syncdb.sh`
 - `./serve.sh`
